@@ -1,0 +1,99 @@
+/*---------------------------------------------------Basic bakground needs---------------------------------------------------*/
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+/*---------------------------------------------------canvas stuff---------------------------------------------------*/
+canvas {
+  background-color: rgb(109, 109, 109);
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+/*---------------------------------------------------image settings---------------------------------------------------*/
+.i-container {
+  text-align: center;
+}
+    
+.centered-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.flip-container {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}
+    
+.flip-container:hover {
+  transform: rotateY(360deg);
+}
+
+/*---------------------------------------------------Name/title settings---------------------------------------------------*/
+.hover-text {
+  color: white;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+    
+.hover-text:hover {
+  text-decoration: underline;
+  color: rgb(34,37,40); 
+}
+
+/*---------------------------------------------------buttons settings---------------------------------------------------*/
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+
+.button-gray {
+  background-color: rgb(22,25,28);
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 135px;
+}
+
+.button-gray:hover{
+  background-color: white;
+  color: rgb(22,25,28);
+
+}
+
+.button-down{
+  position: fixed;
+}
+
+/*---------------------------------------------------The lil white line---------------------------------------------------*/
+/*100% not stolen from chat gpt*/
+.hr-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  margin-top: 165px;
+}
+
+.custom-hr {
+  width: 100px;
+  height: 1px;
+  background-color: gray;
+  margin: 0px;
+  border: none;
+}
